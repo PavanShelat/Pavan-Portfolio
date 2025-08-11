@@ -78,7 +78,7 @@ const Projects = () => {
       image: portfolioImg,
       technologies: ['React.js', 'Tailwind CSS'],
       category: 'Frontend',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/PavanShelat/Pavan-Portfolio',
       liveUrl: null,
       featured: false
     }
