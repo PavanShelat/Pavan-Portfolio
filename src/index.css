@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Portfolio Design System - Professional Developer Portfolio */
+
+@layer base {
+  :root {
+    /* Core Background & Text */
+    --background: 0 0% 99%;
+    --foreground: 220 15% 15%;
+
+    /* Card System */
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+
+    /* Interactive Elements */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
+
+    /* Brand Colors - Professional Blue Palette */
+    --primary: 214 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 214 100% 45%;
+    --primary-light: 214 100% 95%;
+
+    /* Secondary Colors - Elegant Grays */
+    --secondary: 220 10% 96%;
+    --secondary-foreground: 220 15% 25%;
+    --secondary-hover: 220 10% 92%;
+
+    /* Muted Colors */
+    --muted: 220 10% 95%;
+    --muted-foreground: 220 8% 45%;
+
+    /* Accent Colors - Subtle Highlights */
+    --accent: 220 15% 96%;
+    --accent-foreground: 220 15% 25%;
+
+    /* Status Colors */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Borders & Inputs */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 214 100% 50%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(214 100% 50%), hsl(220 100% 60%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 10% 98%));
+    --gradient-subtle: linear-gradient(180deg, hsl(220 10% 99%), hsl(220 10% 96%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(214 100% 50% / 0.1);
+    --shadow-card: 0 2px 15px -3px hsl(220 15% 25% / 0.1);
+    --shadow-hover: 0 8px 30px -5px hsl(214 100% 50% / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Core Background & Text */
+    --background: 220 20% 8%;
+    --foreground: 220 10% 95%;
+
+    /* Card System */
+    --card: 220 15% 12%;
+    --card-foreground: 220 10% 95%;
+
+    /* Interactive Elements */
+    --popover: 220 15% 12%;
+    --popover-foreground: 220 10% 95%;
+
+    /* Brand Colors - Adjusted for Dark Mode */
+    --primary: 214 100% 55%;
+    --primary-foreground: 220 20% 8%;
+    --primary-hover: 214 100% 60%;
+    --primary-light: 214 100% 15%;
+
+    /* Secondary Colors */
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 220 10% 85%;
+    --secondary-hover: 220 15% 18%;
+
+    /* Muted Colors */
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 8% 65%;
+
+    /* Accent Colors */
+    --accent: 220 15% 15%;
+    --accent-foreground: 220 10% 85%;
+
+    /* Status Colors */
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 70% 50%;
+    --success-foreground: 0 0% 100%;
+
+    /* Borders & Inputs */
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 214 100% 55%;
+
+    /* Gradients - Dark Mode */
+    --gradient-hero: linear-gradient(135deg, hsl(214 100% 55%), hsl(220 100% 65%));
+    --gradient-card: linear-gradient(145deg, hsl(220 15% 12%), hsl(220 15% 15%));
+    --gradient-subtle: linear-gradient(180deg, hsl(220 20% 8%), hsl(220 15% 12%));
+
+    /* Shadows - Dark Mode */
+    --shadow-soft: 0 4px 20px -2px hsl(214 100% 55% / 0.2);
+    --shadow-card: 0 2px 15px -3px hsl(0 0% 0% / 0.3);
+    --shadow-hover: 0 8px 30px -5px hsl(214 100% 55% / 0.3);
+
+    /* Sidebar Dark */
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  /* Hero Animations */
+  .hero-fade-in {
+    animation: hero-fade-in 0.8s ease-out forwards;
+  }
+
+  .hero-slide-up {
+    animation: hero-slide-up 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  /* Card Hover Effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-hover hover:-translate-y-1;
+  }
+
+  /* Gradient Backgrounds */
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .bg-gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  /* Shadow Utilities */
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-hover {
+    box-shadow: var(--shadow-hover);
+  }
+
+  /* Smooth Transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-fast {
+    transition: var(--transition-fast);
+  }
+
+  /* Skill Icons Animation */
+  .skill-icon {
+    @apply transition-all duration-300 hover:scale-110 hover:shadow-soft;
+  }
+
+  /* Navigation Link Effects */
+  .nav-link {
+    @apply relative transition-colors duration-200;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+}
+
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-slide-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
