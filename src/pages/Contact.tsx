@@ -234,33 +234,6 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            {/* Availability */}
-            <Card className="p-8 bg-gradient-subtle border-0 shadow-card">
-              <CardHeader className="px-0 pt-0">
-                <CardTitle className="text-xl mb-4">Availability</CardTitle>
-              </CardHeader>
-              <CardContent className="px-0 pb-0">
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-success rounded-full"></div>
-                    <span className="font-medium">Available for new projects</span>
-                  </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    I'm currently looking for new opportunities and interesting projects. 
-                    Whether it's a full-time position, freelance work, or collaboration, 
-                    I'd love to hear from you!
-                  </p>
-                  <div className="pt-2">
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Response time:</strong> Usually within 24 hours
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Best time to reach:</strong> 9 AM - 6 PM IST
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
 
