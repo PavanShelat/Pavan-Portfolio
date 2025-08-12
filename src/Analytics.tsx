@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 
-const GA_MEASUREMENT_ID = "G-EH6LJXLXYV"; // <-- Replace with your ID
+const GA_MEASUREMENT_ID = "G-0YP46V975D"; // <-- Replace with your ID
 
 const Analytics = () => {
   const location = useLocation();
