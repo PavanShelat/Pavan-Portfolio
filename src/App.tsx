@@ -13,6 +13,7 @@ import Certificates from "./pages/Certificates";
 // import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Analytics from "./Analytics";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Layout>
+          <Analytics />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
