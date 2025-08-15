@@ -12,3 +12,4 @@ Allow: /
 
 User-agent: *
 Allow: /
+Sitemap: https://pavan-shelat-portfolio.vercel.app/sitemap.xml
