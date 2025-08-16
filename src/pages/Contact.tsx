@@ -236,45 +236,6 @@ const Contact = () => {
 
           </div>
         </div>
-
-        {/* FAQ Section */}
-        <Card className="mt-16 p-8 bg-card border shadow-card">
-          <CardHeader className="px-0 pt-0">
-            <CardTitle className="text-2xl mb-6">Frequently Asked Questions</CardTitle>
-          </CardHeader>
-          <CardContent className="px-0 pb-0">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <h3 className="font-semibold text-primary">What services do you offer?</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  I offer full-stack web development, AI integration, API development, 
-                  and consulting services for modern web applications.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <h3 className="font-semibold text-primary">What's your typical project timeline?</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  Project timelines vary based on complexity, but most projects 
-                  range from 2-8 weeks depending on requirements and scope.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <h3 className="font-semibold text-primary">Do you work with international clients?</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  Yes! I work with clients globally and am comfortable with 
-                  remote collaboration across different time zones.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <h3 className="font-semibold text-primary">What's your preferred tech stack?</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  I primarily work with React.js, Python/Django, and modern web 
-                  technologies, but I'm adaptable to project requirements.
-                </p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </div>
   );
