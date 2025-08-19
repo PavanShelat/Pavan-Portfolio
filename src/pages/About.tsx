@@ -52,7 +52,7 @@ const About = () => {
           </h2>
           <div className="text-muted-foreground leading-relaxed space-y-4">
             <p>
-              Hello! I’m Pavan Shelat, pursuing my B.E. in Information Technology with an additional Minor Degree in Data Science at SAL Engineering & Technical Institute (CGPA: 8.43). My journey in tech started with curiosity about data and evolved into building AI-powered solutions.
+              Hello! I’m Pavan Shelat, pursuing my B.E. in Information Technology with an additional Minor Degree in Data Science at SAL Engineering & Technical Institute (CGPA: 8.83). My journey in tech started with curiosity about data and evolved into building AI-powered solutions.
             </p>
             <p>
               I’ve completed the IBM Generative AI Internship and Gen AI Academy from Hack2Skills in collaboration with Google Cloud, gaining practical skills in AI, prompt engineering, and cloud-based AI workflows.
@@ -75,7 +75,7 @@ const About = () => {
               <p className="text-muted-foreground">B.E. in Information Technology</p>
               <p className="text-muted-foreground">Additional Minor Degree in Data Science</p>
               <p className="text-primary font-medium mt-1">
-                CGPA: <span className="font-bold">8.43</span>
+                CGPA: <span className="font-bold">8.83</span>
               </p>
             </div>
             <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2 md:mt-0">
