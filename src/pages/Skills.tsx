@@ -1,6 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaBootstrap, FaPython, FaNodeJs, FaDatabase, FaGitAlt, FaGithub, FaRProject } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaBootstrap, FaPython, FaNodeJs, FaGitAlt, FaGithub, FaRProject } from 'react-icons/fa';
 import { SiDjango, SiMysql, SiMongodb, SiNumpy, SiPandas, SiTensorflow, SiJupyter } from 'react-icons/si';
 import { MdDataUsage } from 'react-icons/md';
 import { VscVscode } from "react-icons/vsc";
@@ -48,7 +47,6 @@ const Skills = () => {
         { name: 'GitHub', icon: <FaGithub className="text-black text-2xl" /> },
         { name: 'VS Code', icon: <VscVscode className="text-blue-500 text-2xl" /> },
         { name: 'Jupyter Lab', icon: <SiJupyter className="text-orange-500 text-2xl" /> }
-
       ]
     }
   ];
@@ -79,7 +77,7 @@ const Skills = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <div
                       key={skillIndex}
-                      className="flex flex-col items-center p-4 rounded-lg bg-accent hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default"
+                      className="flex flex-col items-center p-4 rounded-lg bg-accent transition-smooth card-hover cursor-default hover:scale-105"
                     >
                       {skill.icon}
                       <span className="mt-2 text-sm font-medium text-center">{skill.name}</span>

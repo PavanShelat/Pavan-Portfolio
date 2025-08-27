@@ -32,7 +32,7 @@ const Navigation = ({ isDark, toggleTheme }: NavigationProps) => {
           {/* Logo/Brand */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">P</span>
+              <span className="text-white font-bold text-lg">PS</span>
             </div>
             <span className="font-playfair font-semibold text-xl">Pavan Shelat</span>
           </Link>
