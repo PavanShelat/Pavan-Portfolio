@@ -3,12 +3,6 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
 const About = () => {
-  const skills = [
-    'Python', 'NumPy', 'Pandas', 'Matplotlib', 'TensorFlow', 'R (Basics)',
-    'HTML', 'CSS', 'JavaScript', 'React.js', 'Bootstrap', 'Django', 'Node.js',
-    'Git', 'GitHub', 'MySQL', 'MongoDB'
-  ];
-
   const experiences = [
     {
       title: 'IBM Generative AI Internship',
@@ -113,24 +107,6 @@ const About = () => {
           </div>
         </Card>
 
-        {/* Skills */}
-        <Card className="p-8 mb-12 bg-gradient-card border-0 shadow-card">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
-            <Lightbulb className="h-6 w-6 text-primary" />
-            Core Skills
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {skills.map((skill, index) => (
-              <Badge
-                key={index}
-                variant="secondary"
-                className="p-2 text-center justify-center hover:bg-primary hover:text-primary-foreground cursor-default transition-all"
-              >
-                {skill}
-              </Badge>
-            ))}
-          </div>
-        </Card>
       </div>
     </div>
   );
