@@ -104,7 +104,7 @@ const Contact = () => {
                     <Input
                       id="firstName"
                       name="firstName"
-                      placeholder="John"
+                      placeholder="Your First Name"
                       required
                       className="transition-all focus:ring-2 focus:ring-primary/20"
                     />
@@ -114,7 +114,7 @@ const Contact = () => {
                     <Input
                       id="lastName"
                       name="lastName"
-                      placeholder="Doe"
+                      placeholder="Your Last Name"
                       required
                       className="transition-all focus:ring-2 focus:ring-primary/20"
                     />
@@ -127,7 +127,7 @@ const Contact = () => {
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="Your Email Address"
                     required
                     className="transition-all focus:ring-2 focus:ring-primary/20"
                   />

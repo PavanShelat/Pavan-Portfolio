@@ -73,7 +73,7 @@ const Home = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="www.linkedin.com/in/pavan-shelat"
+                href="https://linkedin.com/in/pavan-shelat"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-card border border-border hover:border-primary transition-all hover:shadow-soft skill-icon"
