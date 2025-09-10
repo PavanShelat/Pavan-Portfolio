@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import pavanProfile from '@/assets/pavan-profile.jpg';
 import profile1 from '@/assets/Profile-1.png'
-import profile3 from '@/assets/Profile-3.png'
+import profile3 from '@/assets/profile-3.png'
 import resumePDF from '@/assets/Pavan_Shelat_Resume.pdf'; // Place your resume in src/assets
 
 const Home = () => {
