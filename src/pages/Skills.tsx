@@ -8,7 +8,7 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Frontend Development',
-      icon: '🎨',
+      icon: '',
       skills: [
         { name: 'HTML5', icon: <FaHtml5 className="text-orange-500 text-2xl" /> },
         { name: 'CSS3', icon: <FaCss3Alt className="text-blue-500 text-2xl" /> },
@@ -19,7 +19,7 @@ const Skills = () => {
     },
     {
       title: 'Backend Development',
-      icon: '⚙️',
+      icon: '',
       skills: [
         { name: 'Python', icon: <FaPython className="text-blue-500 text-2xl" /> },
         { name: 'Django', icon: <SiDjango className="text-green-700 text-2xl" /> },
@@ -28,7 +28,7 @@ const Skills = () => {
     },
     {
       title: 'AI & Machine Learning',
-      icon: '🤖',
+      icon: '',
       skills: [
         { name: 'NumPy', icon: <SiNumpy className="text-blue-400 text-2xl" /> },
         { name: 'Pandas', icon: <SiPandas className="text-black text-2xl" /> },
@@ -39,7 +39,7 @@ const Skills = () => {
     },
     {
       title: 'Databases & Tools',
-      icon: '🛠️',
+      icon: '',
       skills: [
         { name: 'MySQL', icon: <SiMysql className="text-blue-600 text-2xl" /> },
         { name: 'MongoDB', icon: <SiMongodb className="text-green-600 text-2xl" /> },

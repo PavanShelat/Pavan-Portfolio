@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import pavanProfile from '@/assets/pavan-profile.jpg';
 import profile1 from '@/assets/Profile-1.png'
+import profile3 from '@/assets/Profile-3.png'
 import resumePDF from '@/assets/Pavan_Shelat_Resume.pdf'; // Place your resume in src/assets
 
 const Home = () => {
@@ -98,7 +99,7 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-hero rounded-2xl transform rotate-6 scale-105 opacity-20"></div>
               <Card className="relative overflow-hidden border-0 shadow-card">
                 <img
-                  src={profile1}
+                  src={profile3}
                   alt="Pavan Shelat - Aspiring Data Scientist & AI/ML Engineer"
                   className="w-80 h-96 object-cover"
                 />
